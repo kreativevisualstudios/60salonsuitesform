@@ -26,7 +26,7 @@ form.addEventListener('submit', e => {
   fetch(scriptURL, { method: 'POST', body: formData })
     .then(response => {
       if (response.ok) {
-        successMessage.textContent = "Thank you for contacting us! Your form has been successfully submitted to [Your Company Name].";
+        successMessage.textContent = "Thank you for contacting us! Your form has been successfully submitted.";
         successMessage.style.display = 'block'; // Show success message
         form.reset(); // Clear the form
       } else {
