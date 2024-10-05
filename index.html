@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="form-content">
+    <h2>
+      <img src="60 no background.png" alt="Company Logo" style="height: 50px; vertical-align: middle; margin-right: 10px;">
+    </h2>
+    <h3 style="color: #F3F6F9; font-size: 24px; margin-top: 0;">Leasing Inquiry</h3>
+    <form action="" method="post" name="contact-form">
+
+      <label for="name">Full Name*</label>
+      <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+      <label for="email">Email*</label>
+      <input type="email" id="mail" name="mail" placeholder="Example@example.com" required>
+
+      <label for="phone">Phone Number*</label>
+      <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required>
+
+      <label for="locations">Locations*</label>
+      <select id="locations" name="locations" required>
+        <option selected disabled value="">Choose a location...</option>
+        <option value="Brandon">Brandon</option>
+        <option value="Comingsoon">Coming soon on Tampa area</option>
+      </select>
+      <span style="color: red; display: none;" id="locationError">Please select a location.</span>
+
+      <label for="SalonType">Type of Salon Professional*</label>
+      <input type="text" id="SalonType" name="SalonType" placeholder="Hair/Skin/Other..." required>
+
+      <label for="coments">Comments*</label>
+      <textarea name="coments" id="coments" cols="30" rows="5" placeholder="Write your comments here." required></textarea>
+
+      <input type="hidden" id="submission-date" name="submission-date">
+
+      <label>
+        <input type="checkbox" id="consent" name="consent" required>
+        By entering my mobile number and checking this box, I agree to receive important messages from Salons by JC regarding leasing information, franchise opportunities, tools, resources, and upcoming events. Message frequency varies.
+      </label>
+
+      <input class="btn" type="submit" value="Send">
+
+    </form>
+    
+    <div id="loading" style="display:none;" class="spinner"></div>
+    <div id="success-message" style="display:none; color: green;"></div>
+  </div>
+
+  <script src="Google Sheet.js"></script>
+
+</body>
+
+</html>
