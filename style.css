@@ -1,0 +1,157 @@
+html {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;   
+} 
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #555764;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-heigh: 100vh;
+
+}
+
+h2 {
+    color: #F3F6F9;
+    font-size: 40px;
+    margin-bottom: 5px; /* Espacio reducido entre el título y el subtítulo */
+}
+
+h3 {
+    color: #F3F6F9; /* Color del subtítulo */
+    font-size: 24px; /* Tamaño del subtítulo */
+    margin-top: 0; /* Sin margen superior para que esté pegado al título */
+}
+body {
+    background: url(pexels-delbeautybox-211032-853427.jpg) no-repeat center center fixed; /* Imagen de fondo completa */
+    background-size: cover; /* Asegura que cubra toda la pantalla *
+    
+}
+
+
+}
+
+.form-content > * {
+    position: relative; /* Asegúrate de que el contenido esté por encima del fondo */
+    z-index: 1; /* Asegúrate de que el contenido se muestre por encima */
+
+.form-content{
+    background: linear-gradient(
+        50deg,
+        rgba(40,42,55,0.96) 50%,
+        rgba(40,42,55,0.7)
+        ),
+        url(pexels-delbeautybox-211032-853427.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    width: 1000px;
+    border-radius: 25px;    
+}
+
+.form-content h2{
+    color: #F3F6F9;
+    font-size: 40px;
+    margin-bottom: 25px;  
+}
+
+form{
+      display: flex;
+      flex-direction: column;
+      widht: 50%;
+  }
+
+label{
+font-size: 17px;
+color: #F4F6F9;
+margin-bottom: 10px;
+}  
+
+input , textarea {
+    padding: 17px 14px;
+    background-color: #333646;
+    border: 0;
+    font-size: 15px;
+    color: #F4F6F9;
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+}
+
+:focus{
+    outline: 1px solid #1E92E9;
+  
+}
+
+.btn{
+    background-color: #1E92E9;
+    width: 150px;
+    align-self: flex-end;
+    cursor: pointer;
+  
+}
+
+.btn:hover{
+    background-color: #36a3f7;
+}
+
+@media(mad-width:991px){
+    body {
+          padding: 30px;
+    }
+    .form-content{
+          width: 100%;
+    }  
+    form {
+        width: 100%;
+    }
+  
+}
+
+.spinner {
+  border: 8px solid rgba(255, 255, 255, 0.3); /* Borde blanco con transparencia */
+  border-top: 8px solid white; /* Parte superior del spinner en blanco */
+  border-radius: 50%;
+  width: 40px; /* Tamaño del spinner */
+  height: 40px; /* Tamaño del spinner */
+  animation: spin 1s linear infinite; /* Animación de giro */
+  position: absolute; /* Posición absoluta para centrar */
+  top: 50%; /* Centrado vertical */
+  left: 50%; /* Centrado horizontal */
+  transform: translate(-50%, -50%); /* Ajuste para centrar */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#success-message {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+select {
+    padding: 17px 14px; /* Same padding as input fields */
+    background-color: #333646; /* Same background color */
+    border: 0; /* No border */
+    font-size: 15px; /* Same font size */
+    color: #F4F6F9; /* Same text color */
+    margin-bottom: 20px; /* Same margin */
+    border-radius: 10px; /* Same border radius */
+    appearance: none; /* Remove default arrow */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23F4F6F9" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>'); /* Custom arrow */
+    background-repeat: no-repeat; /* Prevent repeat */
+    background-position: right 10px center; /* Position the custom arrow */
+    background-size: 10px; /* Size of the custom arrow */
+}
+
+select:focus {
+    outline: 1px solid #1E92E9; /* Same focus outline as inputs */
+}
+
