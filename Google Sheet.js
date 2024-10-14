@@ -1,4 +1,4 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwzv0b_3-XsurF6HE8B40PyzMf41zsoJzzuaWhFhPPKj41M-UqzwoFQXAmMEku_x2XK/exec';
+const scriptURL = 'IUI';
 
 const form = document.forms['contact-form'];
 const loadingMessage = document.getElementById('loading');
